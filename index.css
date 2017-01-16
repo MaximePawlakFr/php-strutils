@@ -1,0 +1,15 @@
+.gras {
+  font-weight:600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
