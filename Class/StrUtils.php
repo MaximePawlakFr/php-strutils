@@ -2,31 +2,31 @@
 class StrUtils {
   private $str;
 
-  public function __construct(){
-    $this->str = "Hello world";
+  public function __construct($value = "Hello world"){
+    $this->str = $value;
   }
 
-  public function setBold(){
+  public function bold(){
     return $this->str = "<span class='gras'>$this->str</span>";
   }
 
-  public function setItalic(){
+  public function italic(){
     return $this->str = "<span class='italic'>$this->str</span>";
   }
 
-  public function setUnderline(){
+  public function underline(){
     return $this->str = "<span class='underline'>$this->str</span>";
   }
 
-  public function setCapitalize(){
+  public function capitalize(){
       return $this->str = "<span class='capitalize'>$this->str</span>";
   }
 
-  public function setUglify(){
-    $this->setBold();
-    $this->setItalic();
-    $this->setUnderline();
-    $this->setCapitalize();
+  public function uglify(){
+    $this->bold();
+    $this->italic();
+    $this->underline();
+    $this->capitalize();
     return $this->str;
   }
 

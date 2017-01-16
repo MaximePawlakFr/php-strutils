@@ -1,5 +1,21 @@
 <?php
 require('./Class/StrUtils.php');
+
+$str = new StrUtils('Yop le monde');
+$str->bold();
+
+$strIta = new StrUtils('Yop le monde');
+$strIta->italic();
+
+$strUnderline = new StrUtils('Yop le monde');
+$strUnderline->underline();
+
+$strCapitalize = new StrUtils('Yop le monde');
+$strCapitalize->capitalize();
+
+$strUglify = new StrUtils('Yop le monde');
+$strUglify->uglify();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,27 +25,20 @@ require('./Class/StrUtils.php');
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <?php
-  $str = new StrUtils();
-  $str->setBold();
-  echo $str->getStr();
-
-  $strIta = new StrUtils();
-  $strIta->setItalic();
-  echo $strIta->getStr();
-
-  $strUnderline = new StrUtils();
-  $strUnderline->setUnderline();
-  echo $strUnderline->getStr();
-
-  $strCapitalize = new StrUtils();
-  $strCapitalize->setCapitalize();
-  echo $strCapitalize->getStr();
-
-  $strUglify = new StrUtils();
-  $strUglify->setUglify();
-  echo $strUglify->getStr();
-  ?>
-
+  <div>
+    <?= $str->getStr()?>
+  </div>
+  <div>
+    <?= $strIta->getStr()?>
+  </div>
+  <div>
+    <?= $strUnderline->getStr()?>
+  </div>
+  <div>
+    <?= $strCapitalize->getStr()?>
+  </div>
+  <div>
+    <?= $strUglify->getStr()?>
+  </div>
 </body>
 </html>
